@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Navigation Styling */
+.navbar {
+    width: 100vw;
+    padding: 10px 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.nav-links li a {
+    text-decoration: none;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-icons li {
+    list-style: none;
+    cursor: pointer;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.hero-text {
+    width: 650px;
+    height: 55%;
+    margin-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero-title-food {
+    color: #FAC131;
+}
+
+.hero-description {
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.order-btn {
+    padding: 10px 20px;
+    background-color: #FAC131;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-image {
+    position: absolute;
+    right: 50px;
+}
+
+/* About Section Styling */
