@@ -23,12 +23,12 @@
                         <img src="./images/logo.png" alt="logo" />
                     </a>
                     <ul class="nav-links">
-                        <li><a href="home">Home</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="menu">Menu</a></li>
-                        <li><a href="gallery">Gallery</a></li>
-                        <li><a href="eeview">Review</a></li>
-                        <li><a href="order">Order</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#review">Review</a></li>
+                        <li><a href="#order">Order</a></li>
                     </ul>
                     <ul class="nav-icons">
                         <li><i class="fa-solid fa-magnifying-glass"></i></li>
@@ -39,10 +39,10 @@
             </header>
 
             <!-- Hero Section -->
-            <section class="hero">
+            <section id="home" class="hero">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        Get Fresh <span class="hero-title-food">Food</span
+                        Get Fresh <span class="hero-title-span">Food</span
                         ><br />
                         in a Easy Way
                     </h1>
@@ -74,27 +74,761 @@
             </section>
 
             <!-- About Section -->
-            <section class="about">
+            <section id="about" class="about">
                 <div class="about-image">
                     <img src="./images/Food-Plate.png" alt="food plate image" />
                 </div>
-                <div>
-                    <h2><span>About</span> Us</h2>
-                    <h3>Why Choose us?</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        A qui in delectus libero laborum et perferendis fugit,
-                        ipsum culpa vitae ipsam velit quaerat inventore sapiente
-                        aliquid sit vero corrupti maiores deleniti cupiditate
-                        consequatur minus voluptatibus? Cum eos quia, ipsa
-                        nesciunt facilis officiis esse exercitationem molestias
-                        corrupti odit aspernatur labore eveniet? voluptatibus?
-                        Cum eos quia, ipsa nesciunt facilis officiis esse
-                        exercitationem
-                    </p>
-                    <button class="order-btn">Order Now</button>
+                <div class="about-text">
+                    <h2 class="about-title">
+                        <span class="about-title-span">About</span> Us
+                    </h2>
+                    <h3 class="about-subtitle">Why Choose us?</h3>
+                    <div class="about-description">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. A qui in delectus libero laborum et
+                            perferendis fugit, ipsum culpa vitae ipsam velit
+                            quaerat inventore sapiente aliquid sit vero corrupti
+                            maiores deleniti cupiditate consequatur minus
+                            voluptatibus? Cum eos quia, ipsa nesciunt facilis
+                            officiis esse exercitationem molestias corrupti odit
+                            aspernatur labore eveniet? voluptatibus? Cum eos
+                            quia, ipsa nesciunt facilis officiis esse
+                            exercitationem
+                        </p>
+                        <button class="order-btn">Order Now</button>
+                    </div>
                 </div>
             </section>
+
+            <!-- Menu Section -->
+            <section id="menu" class="menu">
+                <h2 class="menu-title">
+                    Our <span class="menu-title-span">Menu</span>
+                </h2>
+                <div class="menu-container">
+                    <!-- Menu Card -->
+                    <div class="menu-card">
+                        <img
+                            src="./images/buger.jpg"
+                            alt="burger"
+                            class="menu-image"
+                        />
+                        <div class="menu-description">
+                            <h3 class="menu-card-title">Burger</h3>
+                            <p class="menu-card-description">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Architecto, voluptate!
+                            </p>
+                            <p class="menu-card-price">$20.00</p>
+                            <div class="menu-card-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <button class="menu-card-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img
+                            src="./images/pasta.jpg"
+                            alt="pasta"
+                            class="menu-image"
+                        />
+                        <div class="menu-description">
+                            <h3 class="menu-card-title">Pasta</h3>
+                            <p class="menu-card-description">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Architecto, voluptate!
+                            </p>
+                            <p class="menu-card-price">$20.00</p>
+                            <div class="menu-card-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <button class="menu-card-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img
+                            src="./images/lasagna.webp"
+                            alt="lasagna"
+                            class="menu-image"
+                        />
+                        <div class="menu-description">
+                            <h3 class="menu-card-title">Lasagna</h3>
+                            <p class="menu-card-description">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Architecto, voluptate!
+                            </p>
+                            <p class="menu-card-price">$20.00</p>
+                            <div class="menu-card-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <button class="menu-card-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img
+                            src="./images/chocolate_Drink.jpg"
+                            alt="chocolate drink"
+                            class="menu-image"
+                        />
+                        <div class="menu-description">
+                            <h3 class="menu-card-title">Drink</h3>
+                            <p class="menu-card-description">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Architecto, voluptate!
+                            </p>
+                            <p class="menu-card-price">$20.00</p>
+                            <div class="menu-card-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <button class="menu-card-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img
+                            src="./images/pizza.jpg"
+                            alt="pizza"
+                            class="menu-image"
+                        />
+                        <div class="menu-description">
+                            <h3 class="menu-card-title">Pizza</h3>
+                            <p class="menu-card-description">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Architecto, voluptate!
+                            </p>
+                            <p class="menu-card-price">$20.00</p>
+                            <div class="menu-card-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <button class="menu-card-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img
+                            src="./images/Hot_dog.jpg"
+                            alt="hot dog"
+                            class="menu-image"
+                        />
+                        <div class="menu-description">
+                            <h3 class="menu-card-title">Hotdog</h3>
+                            <p class="menu-card-description">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Architecto, voluptate!
+                            </p>
+                            <p class="menu-card-price">$20.00</p>
+                            <div class="menu-card-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <button class="menu-card-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img
+                            src="./images/juse.jpg"
+                            alt="juice"
+                            class="menu-image"
+                        />
+                        <div class="menu-description">
+                            <h3 class="menu-card-title">Juice</h3>
+                            <p class="menu-card-description">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Architecto, voluptate!
+                            </p>
+                            <p class="menu-card-price">$20.00</p>
+                            <div class="menu-card-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <button class="menu-card-btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img
+                            src="./images/biryani.webp"
+                            alt="burger"
+                            class="menu-image"
+                        />
+                        <div class="menu-description">
+                            <h3 class="menu-card-title">Biryani</h3>
+                            <p class="menu-card-description">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Architecto, voluptate!
+                            </p>
+                            <p class="menu-card-price">$20.00</p>
+                            <div class="menu-card-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #fac131"
+                                ></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <button class="menu-card-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="gallery">
+                <h2 class="gallery-title">
+                    Our <span class="gallery-title-span">Gallery</span>
+                </h2>
+                <div class="gallery-container">
+                    <img
+                        src="./images/gallary_1.jpg"
+                        alt="sandwich"
+                        class="gallery-image"
+                    />
+                    <img
+                        src="./images/gallary_2.jpg"
+                        alt="cupcake"
+                        class="gallery-image"
+                    />
+                    <img
+                        src="./images/gallary_3.jpg"
+                        alt="chocolate cupcake"
+                        class="gallery-image"
+                    />
+                    <img
+                        src="./images/gallary_4.jpg"
+                        alt="bread"
+                        class="gallery-image"
+                    />
+                    <img
+                        src="./images/gallary_5.jpg"
+                        alt="pizza"
+                        class="gallery-image"
+                    />
+                    <img
+                        src="./images/gallary_6.jpg"
+                        alt="cake"
+                        class="gallery-image"
+                    />
+                </div>
+            </section>
+
+            <!-- Customer Review Section -->
+            <section id="review" class="customer-review">
+                <h2 class="customer-review-title">
+                    Customer
+                    <span class="customer-review-title-span">Review</span>
+                </h2>
+                <div class="customer-review-container">
+                    <!-- Customer Review Card -->
+                    <div class="customer-review-card">
+                        <div class="customer-review-image-container">
+                            <img
+                                src="./images/review_1.png"
+                                alt="john doe"
+                                class="customer-review-image"
+                            />
+                        </div>
+                        <div class="customer-review-description">
+                            <div>
+                                <h3 class="customer-review-card-name">
+                                    John Doe
+                                </h3>
+                                <div class="customer-review-card-card-rating">
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Nihil, iusto cum cumque quas
+                                corporis id ducimus, sit sunt veniam ad expedita
+                                reiciendis? Laborum dolorum officiis reiciendis,
+                                consequatur, facere repudiandae beatae
+                                dignissimos nesciunt fugit sunt atque! Nisi
+                                nulla earum quibusdam minima vel ab repellat nam
+                                velit laboriosam, aliquid possimus eveniet
+                                placeat sequi quis quam alias consectetur unde
+                                libero! Minus iure nihil nulla doloremque,
+                                animi, similique tenetur sapiente, placeat dicta
+                                officia veniam veritatis est. Consequuntur
+                                doloribus temporibus quo impedit assumenda neque
+                                eum doloremque ex perferendis itaque excepturi,
+                                sed pariatur nemo, similique molestiae delectus
+                                soluta sequi. Atque dignissimos quae suscipit
+                                laboriosam id quibusdam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="customer-review-card">
+                        <div class="customer-review-image-container">
+                            <img
+                                src="./images/review_2.png"
+                                alt="john doe"
+                                class="customer-review-image"
+                            />
+                        </div>
+                        <div class="customer-review-description">
+                            <div>
+                                <h3 class="customer-review-card-name">
+                                    John Doe
+                                </h3>
+                                <div class="customer-review-card-card-rating">
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Nihil, iusto cum cumque quas
+                                corporis id ducimus, sit sunt veniam ad expedita
+                                reiciendis? Laborum dolorum officiis reiciendis,
+                                consequatur, facere repudiandae beatae
+                                dignissimos nesciunt fugit sunt atque! Nisi
+                                nulla earum quibusdam minima vel ab repellat nam
+                                velit laboriosam, aliquid possimus eveniet
+                                placeat sequi quis quam alias consectetur unde
+                                libero! Minus iure nihil nulla doloremque,
+                                animi, similique tenetur sapiente, placeat dicta
+                                officia veniam veritatis est. Consequuntur
+                                doloribus temporibus quo impedit assumenda neque
+                                eum doloremque ex perferendis itaque excepturi,
+                                sed pariatur nemo, similique molestiae delectus
+                                soluta sequi. Atque dignissimos quae suscipit
+                                laboriosam id quibusdam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="customer-review-card">
+                        <div class="customer-review-image-container">
+                            <img
+                                src="./images/review_3.png"
+                                alt="john doe"
+                                class="customer-review-image"
+                            />
+                        </div>
+                        <div class="customer-review-description">
+                            <div>
+                                <h3 class="customer-review-card-name">
+                                    John Doe
+                                </h3>
+                                <div class="customer-review-card-card-rating">
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Nihil, iusto cum cumque quas
+                                corporis id ducimus, sit sunt veniam ad expedita
+                                reiciendis? Laborum dolorum officiis reiciendis,
+                                consequatur, facere repudiandae beatae
+                                dignissimos nesciunt fugit sunt atque! Nisi
+                                nulla earum quibusdam minima vel ab repellat nam
+                                velit laboriosam, aliquid possimus eveniet
+                                placeat sequi quis quam alias consectetur unde
+                                libero! Minus iure nihil nulla doloremque,
+                                animi, similique tenetur sapiente, placeat dicta
+                                officia veniam veritatis est. Consequuntur
+                                doloribus temporibus quo impedit assumenda neque
+                                eum doloremque ex perferendis itaque excepturi,
+                                sed pariatur nemo, similique molestiae delectus
+                                soluta sequi. Atque dignissimos quae suscipit
+                                laboriosam id quibusdam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="customer-review-card">
+                        <div class="customer-review-image-container">
+                            <img
+                                src="./images/review_4.png"
+                                alt="john doe"
+                                class="customer-review-image"
+                            />
+                        </div>
+                        <div class="customer-review-description">
+                            <div>
+                                <h3 class="customer-review-card-name">
+                                    John Doe
+                                </h3>
+                                <div class="customer-review-card-card-rating">
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: #fac131"
+                                    ></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Nihil, iusto cum cumque quas
+                                corporis id ducimus, sit sunt veniam ad expedita
+                                reiciendis? Laborum dolorum officiis reiciendis,
+                                consequatur, facere repudiandae beatae
+                                dignissimos nesciunt fugit sunt atque! Nisi
+                                nulla earum quibusdam minima vel ab repellat nam
+                                velit laboriosam, aliquid possimus eveniet
+                                placeat sequi quis quam alias consectetur unde
+                                libero! Minus iure nihil nulla doloremque,
+                                animi, similique tenetur sapiente, placeat dicta
+                                officia veniam veritatis est. Consequuntur
+                                doloribus temporibus quo impedit assumenda neque
+                                eum doloremque ex perferendis itaque excepturi,
+                                sed pariatur nemo, similique molestiae delectus
+                                soluta sequi. Atque dignissimos quae suscipit
+                                laboriosam id quibusdam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Order Now Form Section -->
+            <section id="order" class="order-now">
+                <h2 class="order-now-title">
+                    Order <span class="order-now-title-span">Now</span>
+                </h2>
+                <div class="order-now-container">
+                    <div class="order-now-image-container">
+                        <img src="./images/order_image.png" alt="order" />
+                    </div>
+                    <form action="" method="post" class="order-now-form">
+                        <div class="order-now-input">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="your name"
+                            />
+                        </div>
+                        <div class="order-now-input">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="your email"
+                            />
+                        </div>
+                        <div class="order-now-input">
+                            <label for="number">Number</label>
+                            <input
+                                type="text"
+                                name="number"
+                                id="number"
+                                placeholder="your number"
+                            />
+                        </div>
+                        <div class="order-now-input">
+                            <label for="howMuch">How Much</label>
+                            <input
+                                type="number"
+                                name="howMuch"
+                                id="howMuch"
+                                placeholder="how much"
+                            />
+                        </div>
+                        <div class="order-now-input">
+                            <label for="yourOrder">Your Order</label>
+                            <input
+                                type="text"
+                                name="yourOrder"
+                                id="yourOrder"
+                                placeholder="your order"
+                            />
+                        </div>
+                        <div class="order-now-input">
+                            <label for="address">Address</label>
+                            <input
+                                type="text"
+                                name="address"
+                                id="address"
+                                placeholder="your address"
+                            />
+                        </div>
+                        <button type="submit" class="order-now-btn">
+                            Order Now
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Our Team Section -->
+            <section class="our-team">
+                <h2 class="our-team-title">
+                    Our <span class="our-team-title-span">Team</span>
+                </h2>
+                <div class="our-team-container">
+                    <div class="our-team-image-container">
+                        <img
+                            src="./images/chef1.png"
+                            alt="chef 1"
+                            class="our-team-image"
+                        />
+                    </div>
+                    <div class="our-team-image-container">
+                        <img
+                            src="./images/chef2.png"
+                            alt="chef 2"
+                            class="our-team-image"
+                        />
+                    </div>
+                    <div class="our-team-image-container">
+                        <img
+                            src="./images/chef3.jpg"
+                            alt="chef 3"
+                            class="our-team-image"
+                        />
+                    </div>
+                    <div class="our-team-image-container">
+                        <img
+                            src="./images/chef4.jpg"
+                            alt="chef 4"
+                            class="our-team-image"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer class="footer">
+                <div class="footer-container">
+                    <div>
+                        <h4>Location</h4>
+                        <ul>
+                            <li>Sri Lanka</li>
+                            <li>USA</li>
+                            <li>India</li>
+                            <li>Japan</li>
+                            <li>Italy</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Quick Link</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#review">Review</a></li>
+                            <li><a href="#order">Order</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>+94 12 3456 789</li>
+                            <li>+94 25 5568456</li>
+                            <li>johndoe123@gmail.com</li>
+                            <li>foodshop123@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Our Service</h4>
+                        <ul>
+                            <li>Fast Delivery</li>
+                            <li>Easy Payments</li>
+                            <li>24 x 7 Service</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Follows</h4>
+                        <ul id="footer-list-icons">
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-linkedin"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-design-by">
+                    <p>
+                        Design by
+                        <span>
+                            <i
+                                class="fa-solid fa-face-smile"
+                                style="color: #fac131"
+                            ></i>
+                            WT Master Code
+                        </span>
+                    </p>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
