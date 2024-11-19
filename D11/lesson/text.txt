@@ -1,0 +1,45 @@
+Databases
+
+- Relational Databases (MySQL)
+
+Tables
+- rows and columns
+
+Employee Management System
+
+Employees Table
+- lname
+- fname
+- mname
+- email
+
+
+
+Document database - like MongoDB Atlas, excel in scenarios
+
+Relational
+Tables
+Records
+
+VS
+
+NoSQL
+Collections
+Documents
+
+
+[ // in NoSQL - collection | in SQL - Table
+    { // document | record
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "age": 30,
+    },
+    { // document | record
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "age": 30,
+    },
+]
+
+
+
