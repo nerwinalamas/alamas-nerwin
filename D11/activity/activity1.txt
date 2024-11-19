@@ -1,0 +1,60 @@
+// Step 3: Perform the following CRUD operations using MongoDB Compass:
+
+// a) Create Operation:
+// Insert at least three book documents with different fields such as title, author, genre, and publication year.
+
+db.Books.insertMany([
+    {
+        "title": "Welcome to CSS",
+        "author": "John Doe",
+        "genre": "Coding",
+        "publication_year": 2024,
+    },
+    {
+        "title": "HTML for beginners",
+        "author": "Mary Doe",
+        "genre": "Coding",
+        "publication_year": 2022,
+    },
+    {
+        "title": "How to make Lumpia",
+        "author": "Chef Ramsey",
+        "genre": "Cooking",
+        "publication_year": 2023,
+    },
+])
+
+// b) Read Operation:
+// Retrieve all the book documents in the "Books" collection.
+
+db.Books.find()
+
+// Retrieve a specific book document based on its title or author.
+
+db.Books.find({ title: "How to make Lumpia" })
+db.Books.find({ author: "John Doe" })
+
+// c) Update Operation:
+// Update the genre of a book document.
+
+db.Books.updateOne(
+    { title: "HTML for Beginners" },
+    { $set: { genre: "Web Development" } }
+)
+
+// Update the publication year of a book document.
+
+db.Books.updateOne(
+    { title: "How to Make Lumpia" },
+    { $set: { publication_year: 2025 } }
+)
+
+// d) Delete Operation:
+// Delete a book document based on its title or author.
+
+db.Books.deleteOne({ title: "Welcome to CSS" })
+db.Books.deleteMany({ author: "Mary Doe" })
+
+// Step 4: After each operation, verify the changes by re-reading the data from the "Books" collection.
+
+
