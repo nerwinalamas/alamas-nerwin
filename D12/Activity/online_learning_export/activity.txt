@@ -1,0 +1,97 @@
+1. Retrieve all courses in the "Programming" category.
+
+db.Courses.find({ category: ObjectId('673ddc16b0c079adda1e870a') })
+
+
+2. Retrieve all students enrolled in the course "Introduction to MongoDB".
+
+db.Courses.find({ title: "Introduction to MongoDB" }, { students: 1 });
+
+
+3. Retrieve course details, including category and instructor information, for all courses.
+
+db.Courses.aggregate([
+  {
+    $lookup: {
+      from: "Categories",
+      localField: "category",
+      foreignField: "_id",
+      as: "categoryDetails"
+    }
+  },
+  {
+    $lookup: {
+      from: "Instructors",
+      localField: "instructor",
+      foreignField: "_id",
+      as: "instructorDetails"
+    }
+  }
+]);
+
+
+4. Retrieve all reviews for the course "Data Science with Python," including the details of the students who wrote them.
+
+db.Courses.aggregate([
+  { $match: { title: "Data Science with Python" } },
+  { $unwind: "$reviews" },
+  {
+    $lookup: {
+      from: "Students",
+      localField: "reviews.student",
+      foreignField: "_id",
+      as: "studentDetails"
+    }
+  }
+]);
+
+
+5. Find the average rating for each course.
+
+db.Courses.aggregate([
+  { $unwind: "$reviews" },
+  {
+    $group: {
+      _id: "$_id",
+      title: { $first: "$title" },
+      averageRating: { $avg: "$reviews.rating" }
+    }
+  }
+]);
+
+
+6. Retrieve all courses taught by the instructor "Jane Doe".
+
+db.Courses.find({ instructor: ObjectId('673ddc2bb0c079adda1e8710') });
+
+
+7. Count the number of courses in each category.
+
+db.Courses.aggregate([ { $group: { _id: "$category", courseCount: { $sum: 1 } } } ])
+
+
+8. Find all students who have reviewed the course "Introduction to MongoDB".
+
+db.Courses.find({ title: "Introduction to MongoDB" }, { "reviews.student": 1 });
+
+
+9. Retrieve the titles of all courses where the average rating is above 4.
+
+db.Courses.aggregate([
+  { $unwind: "$reviews" },
+  {
+    $group: {
+      _id: "$_id",
+      title: { $first: "$title" },
+      averageRating: { $avg: "$reviews.rating" }
+    }
+  },
+  { $match: { averageRating: { $gt: 4 } } },
+  { $project: { _id: 0, title: 1 } }
+]);
+
+
+10. Retrieve all students who are enrolled in courses taught by "John Smith".
+
+db.Courses.find({ instructor: ObjectId('673ddc2bb0c079adda1e870f') }, { students: 1 });
+
